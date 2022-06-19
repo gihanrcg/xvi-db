@@ -29,4 +29,13 @@
     height: 200px;
     padding: 10px;
     width: 100%;
+    /* position: sticky;
+    top: 50px;
+    z-index: 10; */
+    
+}
+
+.data-container{
+    position: relative;
+    top: 0px;
 }

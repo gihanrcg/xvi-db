@@ -26,8 +26,8 @@ const App = () => {
 
   return (
   <div className="container text-center">
-       
-    <div className='search-container card border-success'>
+    
+    <div className='search-container card border-success sticky-top'>
       <label for="searchBy" class="form-label">Search By</label>
       <select className="form-select" aria-label="Default select example" id="searchBy" onChange={onChangeSearchBy}>
         <option value="name">Name</option>
@@ -36,13 +36,12 @@ const App = () => {
       </select>
       
       <label for="exampleInputPassword1" class="form-label">Type Here</label>
-      <input autoFocus type="search" class="form-control" id="exampleInputPassword1" onKeyDown={onKeyDown}></input>
-      
+      <input autoFocus type="search" class="form-control" id="exampleInputPassword1" onKeyDown={onKeyDown}></input>     
   
     </div>
 
-
-    <div className='grid'>
+    <div className="data-container">
+      <div className='grid'>
         {filteredUsers.map(user => {
           return <UserCard 
             name={user.name} 
@@ -53,6 +52,7 @@ const App = () => {
             />
         })}
       </div>
+    </div>
       
   </div>  
   );
