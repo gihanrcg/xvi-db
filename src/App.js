@@ -5,7 +5,7 @@ import parse from 'html-react-parser';
 
 const App = () => {
 
-  const [allUsers, setAllUsers] = useState(data);
+  const [allUsers,] = useState(data);
   const [filteredUsers, setFilteredUsers] = useState(allUsers);
   const [searchBy, setSearchBy] = useState('name');
 
